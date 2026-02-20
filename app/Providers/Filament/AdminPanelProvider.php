@@ -36,34 +36,34 @@ class AdminPanelProvider extends PanelProvider
                 "info" => Color::Sky,
             ])
             ->discoverResources(
-                in: app_path("Domain/Finance/Filament/Resources"),
-                for: "App\Domain\Finance\Filament\Resources",
+                in: app_path("Presentation/Filament/Resources"),
+                for: "App\Presentation\Filament\Resources",
             )
             ->discoverResources(
-                in: app_path("Domain/Gamification/Filament/Resources"),
-                for: "App\Domain\Gamification\Filament\Resources",
+                in: app_path("Presentation/Filament/Resources"),
+                for: "App\Presentation\Filament\Resources",
             )
             ->discoverResources(
-                in: app_path("Domain/Investiment/Filament/Resources"),
-                for: "App\Domain\Investiment\Filament\Resources"
+                in: app_path("Presentation/Filament/Resources"),
+                for: "App\Presentation\Filament\Resources"
             )
-            ->discoverPages(in: app_path("Domain/Finance/Filament/Pages"), for: "App\Domain\Finance\Filament\Pages")
+            ->discoverPages(in: app_path("Presentation/Filament/Pages"), for: "App\Presentation\Filament\Pages")
             ->discoverPages(
-                in: app_path("Domain/Gamification/Filament/Pages"),
-                for: "App\Domain\Gamification\Filament\Pages",
+                in: app_path("Presentation/Filament/Pages"),
+                for: "App\Presentation\Filament\Pages",
             )
             ->discoverPages(
-                in: app_path("Domain/Investiment/Filament/Pages"),
-                for: "App\Domain\Investiment\Filament\Pages",
+                in: app_path("Presentation/Filament/Pages"),
+                for: "App\Presentation\Filament\Pages",
             )
             ->pages([Dashboard::class])
             ->discoverWidgets(
-                in: app_path("Domain/Finance/Filament/Widgets"),
-                for: "App\Domain\Finance\Filament\Widgets",
+                in: app_path("Presentation/Filament/Widgets"),
+                for: "App\Presentation\Filament\Widgets",
             )
             ->discoverWidgets(
-                in: app_path("Domain/Gamification/Filament/Widgets"),
-                for: "App\Domain\Gamification\Filament\Widgets",
+                in: app_path("Presentation/Filament/Widgets"),
+                for: "App\Presentation\Filament\Widgets",
             )
             ->widgets([AccountWidget::class])
             ->middleware([
