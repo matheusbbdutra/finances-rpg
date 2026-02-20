@@ -1,0 +1,34 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('nivels', function (Blueprint $table) {
+            $table->id();
+            $table->string('nome');
+            $table->integer('nivel')->unique();
+            $table->integer('xp_minimo');
+            $table->integer('xp_maximo');
+            $table->string('icone')->nullable();
+            $table->string('cor')->nullable();
+            $table->boolean('ativo')->default(true);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('nivels');
+    }
+};
