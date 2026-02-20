@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domain\Investiment\Filament\Resources\Posicoes\Pages;
+namespace App\Presentation\Filament\Resources\Posicoes\Pages;
 
-use App\Domain\Investiment\Filament\Resources\Posicoes\PosicaoResource;
+use App\Presentation\Filament\Resources\Posicoes\PosicaoResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ManageRecords;
 
